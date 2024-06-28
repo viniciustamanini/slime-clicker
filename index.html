@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Slime Clicker</title>
+  <link rel="stylesheet" href="stylesheet.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="square">
+    <div class="game">
+      <div class="square-header">
+        <div class="menu-header">
+          <div class="col">
+            <div class="icon-container">
+              <img src="./img/coin-stack.png" title="coin-icon"></a>
+            </div>
+            <p id="coin-pouch">0</p>
+          </div>
+          <div class="col">
+            <div class="icon-container">
+              <img src="./img/dmg-icon.png" title="dmg-icon"></a>
+            </div>
+            <p id="damage"></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="inner-square">
+        <div class="image-container" onclick="incrementCoins()" id="boss">
+          <img src="./img/slime.png" alt="slime">
+        </div>
+        <div class="image-container-left-cloud" id="leftCloud">
+          <img src="./img/cloud.png" alt="cloud">
+        </div>
+        <div class="image-container-right-cloud" id="rightCloud">
+          <img src="./img/cloud.png" alt="cloud">
+        </div>
+
+        <div class="health-container" id="healthContainer">
+          <div class="health-text" id="healthText"></div>
+          <div class="health-bar" id="healthBar"></div>
+          <div class="health-text">Slime</div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="menu">
+      <div class="menu-header">
+        <div class="col">
+          <div class="icon-container">
+            <img src="./img/pub1.png" title="tavern-icon"></a>
+          </div>
+        </div>
+        <div class="col">Preço</div>
+        <div class="col">Dano</div>
+      </div>
+
+      <div class="row" onclick="setClickValue(10, 1)">
+        <div class="menu-header">
+          <div class="col">
+            <div class="item-icon-container">
+              <img src="./img/sword.png" title="sword-icon"></a>
+            </div>
+          </div>
+          <div class="col">10</div>
+          <div class="col">1</div>
+        </div>
+      </div>
+      <div class="row" onclick="setClickValue(50, 8)">
+        <div class="menu-header">
+          <div class="col">
+            <div class="item-icon-container">
+              <img src="./img/swords.png" title="swords-icon"></a>
+            </div>
+          </div>
+          <div class="col">50</div>
+          <div class="col">8</div>
+        </div>
+      </div>
+      <div class="row" onclick="setClickValue(100, 32)">
+        <div class="menu-header">
+          <div class="col">
+            <div class="item-icon-container">
+              <img src="./img/gun.png" title="gun-icon"></a>
+            </div>
+          </div>
+          <div class="col">100</div>
+          <div class="col">32</div>
+        </div>
+      </div>
+      <div class="gamelog-row">
+        <p class="gamelog-title-overlay">Game log</p>
+        <img class="gamelog-image" src="img/pergaminho.png" title="gamelog">
+        <p class="gamelog-text-overlay" id="gamelog"></p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
